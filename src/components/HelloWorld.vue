@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <div v-linkified>{{ hoge }}</div>
   </div>
 </template>
 
@@ -8,7 +8,12 @@
 export default {
   name: 'HelloWorld',
   props: {
-    msg: String
+    obj: Object
+  },
+  computed: {
+    hoge() {
+      return this.obj.msg;
+    }
   }
 }
 </script>

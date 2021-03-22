@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld :obj="obj"/>
   </div>
 </template>
 
@@ -9,6 +9,13 @@ import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
+  data() {
+    return {
+      obj: {
+        msg:"Welcome to Your Vue.js App https://google.com"
+      }
+    }
+  },
   components: {
     HelloWorld
   }
