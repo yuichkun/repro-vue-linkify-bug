@@ -1,24 +1,9 @@
-# vue-linkify-test
+# Demo of Not-Working Vue Linkify
 
-## Project setup
-```
-yarn install
-```
+The current implementation of [vue-linkify](https://github.com/phanan/vue-linkify) does not work with props/data/computed values that **changes**.
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+This is a sample project that reproduces the bug.
 
-### Compiles and minifies for production
-```
-yarn build
-```
+## Live Demo
 
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+here: https://vue-linkify-not-working-demo.vercel.app/
