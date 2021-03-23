@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <HelloWorld :obj="obj"/>
+    <HelloWorld :msg="msg"/>
+    <button @click="changeText">Change text</button>
   </div>
 </template>
 
@@ -11,9 +12,12 @@ export default {
   name: 'App',
   data() {
     return {
-      obj: {
-        msg:"Welcome to Your Vue.js App https://google.com"
-      }
+      msg: "Initial Text https://google.com"
+    }
+  },
+  methods: {
+    changeText: function() {
+      this.msg = "Changed Text https://example.com"
     }
   },
   components: {
@@ -21,14 +25,3 @@ export default {
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
