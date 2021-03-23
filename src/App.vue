@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <HelloWorld :msg="msg"/>
+    <br />
     <button @click="changeText">Change text</button>
   </div>
 </template>
